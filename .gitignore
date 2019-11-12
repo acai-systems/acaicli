@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+.ipynb_checkpoints
+.ipynb
+test*
+acaisdk
+__pycache__
