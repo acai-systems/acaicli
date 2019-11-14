@@ -1,6 +1,6 @@
 import os
 from setuptools import setup, find_packages
-
+import pip
 
 setup(
     name='acaicli',
@@ -13,6 +13,5 @@ setup(
     packages=find_packages(),
     scripts=['acaicli/acai'],
     include_package_data=True,
-    dependency_links=['git+https://github.com/acai-systems/acaisdk'],
     zip_safe=True
 )

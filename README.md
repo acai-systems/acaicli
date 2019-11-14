@@ -4,17 +4,19 @@ This is the client CLI for ACAI System.
 
 Notice that **Python3** is required. 
 [ACAI SDK](https://acai-systems.github.io/acaisdk/)
-will be installed as a dependency.
+must be installed as a dependency.
 
+Method B:
 ```bash
-git clone https://github.com/acai-systems/acaicli.git
-cd acaicli/
-pip3 install .
+pip3 install git+https://github.com/acai-systems/acaisdk.git
+pip3 install git+https://github.com/acai-systems/acaicli.git
 
 # If not sure which Python executable pip3 is linked with, 
 # alternatively, you can do 
-python3 -m pip install .
-
+python3 -m pip install blablabla
+```
+Usage
+```bash
 # Log in to the system by exporting ENV variables
 export ACAI_TOKEN=****************
 

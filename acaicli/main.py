@@ -1,4 +1,4 @@
-from .argparser import ArgumentLoader
+from argparser import ArgumentLoader
 from acaisdk.utils import utils
 
 

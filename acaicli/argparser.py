@@ -1,8 +1,8 @@
 import sys
 import argparse
 from typing import Tuple, Dict
-from .cliutils import print_err
-from .commands import *
+from cliutils import print_err
+from commands import *
 
 
 def _has_level2_commands(func):
@@ -37,7 +37,8 @@ class ArgumentLoader:
             'fileset': (self._fileset, FileSetCommand),
             'job': (self._job, JobCommand),
             'file': (self._file, FileCommand),
-            'ls': (self._list, ListCommand)
+            'ls': (self._list, ListCommand),
+            'get': (self._get, DownloadCommand)
         }
         self.sys_argv_backup = sys.argv
         sys.argv = sys.argv[:2]

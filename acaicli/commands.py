@@ -1,12 +1,12 @@
 from acaisdk.utils.exceptions import *
-from .cliutils import *
+from cliutils import *
 from acaisdk.file import File
 from acaisdk.fileset import FileSet
 from acaisdk.project import Project
 from acaisdk.utils.utils import debug
 from acaisdk.job import Job
 from acaisdk.meta import Meta, Condition
-from .prettyprint import PrettyPrint
+from prettyprint import PrettyPrint
 import os
 from typing import List
 from enum import Enum, auto
